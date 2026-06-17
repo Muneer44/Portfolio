@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammed Muneer | Cybersecurity Portfolio</title>
+  <meta name="description" content="SOC Analyst L3 & Cybersecurity Content Engineer — Toronto, ON" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ══ NAVBAR ══════════════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="container nav-inner">
+      <div class="nav-logo">Mohammed<span> Muneer</span></div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">about</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#experience">experience</a></li>
+        <li><a href="#projects">projects</a></li>
+        <li><a href="#certifications">certs</a></li>
+        <li><a href="#blog">blog</a></li>
+        <li><a href="#contact">contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- ══ HERO ════════════════════════════════════════════════ -->
+  <section id="hero">
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <p class="hero-eyebrow">Hello, World!</p>
+        <h1 class="hero-name">Mohammed Muneer</h1>
+        <div class="hero-roles">
+          <span id="typed"></span><span class="cursor"></span>
+        </div>
+        <p class="hero-tagline">
+          Cybersecurity professional with 2+ years of experience in Security Operations and Engineering within a Managed Security Services Provider (MSSP) environment, 
+          supporting 12+ enterprise clients across financial services, technology, manufacturing, automotive, and critical infrastructure sectors. I build detections, 
+          investigate threats, author threat intelligence, and develop hands-on cybersecurity training focused on malware analysis, reverse engineering, and threat detection.
+        </p>
+        <div class="hero-ctas">
+          <a href="https://www.linkedin.com/in/muneer44/" class="btn btn-fill" target="_blank">LinkedIn ↗</a>
+          <a href="https://github.com/muneer44" class="btn" target="_blank">GitHub ↗</a>
+          <!-- UPDATE: Add your resume PDF to the repo and update the filename below -->
+          <a href="Mohammed Muneer Resume.pdf" class="btn" download>Resume ↓</a>
+        </div>
+      </div>
+      
+<!-- Right: SOC command dashboard -->
+<div class="soc-dash-wrap">
+  <div class="soc-dash">
+
+    <div class="soc-dash-head">
+      <div class="soc-head-left">
+        <span class="soc-live-dot"></span>
+        <span class="soc-mono">SOC OPS · DETECTION GRID</span>
+      </div>
+      <div class="soc-head-right">
+        <span>SECURE SESSION</span>
+        <span class="soc-ok">● <span id="utc-clock">UTC</span></span>
+      </div>
+    </div>
+
+    <div class="soc-dash-grid">
+
+      <div class="soc-card soc-feed-card">
+        <div class="soc-card-head">
+          <span>THREAT FEED</span>
+          <span class="soc-chip">AUTO TRIAGE</span>
+        </div>
+        <div class="soc-feed">
+          <div><span class="soc-time">00:12</span><span class="soc-badge detect">DETECT</span><span>Suspicious PowerShell</span></div>
+          <div><span class="soc-time">00:10</span><span class="soc-badge hunt">HUNT</span><span>Impossible travel pattern</span></div>
+          <div><span class="soc-time">00:08</span><span class="soc-badge detect">DETECT</span><span>C2 beacon behavior</span></div>
+          <div><span class="soc-time">00:05</span><span class="soc-badge alert">REVIEW</span><span>Privilege escalation signal</span></div>
+          <div><span class="soc-time">00:03</span><span class="soc-badge block">BLOCKED</span><span>Credential stuffing attempt</span></div>
+        </div>
+      </div>
+
+      <div class="soc-card soc-map-card">
+        <div class="soc-card-head">
+          <span>TELEMETRY MAP</span>
+          <span>LIVE</span>
+        </div>
+        <div class="soc-map">
+          <span class="map-dot d1"></span>
+          <span class="map-dot d2"></span>
+          <span class="map-dot d3"></span>
+          <span class="map-dot d4"></span>
+          <span class="map-dot d5"></span>
+          <span class="map-line l1"></span>
+          <span class="map-line l2"></span>
+        </div>
+        <div class="soc-map-chips">
+          <span class="soc-chip ok">SIEM</span>
+          <span class="soc-chip">EDR</span>
+          <span class="soc-chip">NDR</span>
+        </div>
+      </div>
+
+      <div class="soc-card soc-telemetry-card">
+        <div class="soc-card-head">
+          <span>LIVE TELEMETRY</span>
+          <span>5s avg</span>
+        </div>
+
+        <div class="soc-metric-row">
+          <div>
+            <span class="soc-metric-label">Alerts triaged</span>
+            <span class="soc-metric-value">250+</span>
+          </div>
+          <div class="soc-sparkline"></div>
+        </div>
+
+        <div class="soc-metric-row">
+          <div>
+            <span class="soc-metric-label">Use cases built</span>
+            <span class="soc-metric-value blue">50+</span>
+          </div>
+          <div class="soc-sparkline alt"></div>
+        </div>
+
+        <div class="soc-metric-row">
+          <div>
+            <span class="soc-metric-label">Intel briefs</span>
+            <span class="soc-metric-value green">48</span>
+          </div>
+          <div class="soc-sparkline green"></div>
+        </div>
+      </div>
+
+      <div class="soc-card soc-status-card">
+        <div class="soc-status">ACTIVE</div>
+        <div class="soc-status-sub">Detection · Investigation · Response</div>
+
+        <div class="soc-ring-row">
+          <div class="soc-ring">
+            <span>92</span>
+          </div>
+          <div>
+            <div class="soc-ring-label">Coverage posture</div>
+            <div class="soc-ring-delta">+ tuned logic</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="soc-dash-foot">
+      <span>$ detection-grid --mode=monitor --signal=high</span>
+      <span>workflow ready_</span>
+    </div>
+
+  </div>
+</div>
+
+
+  </div>
+</div>
+		
+    </div>
+  </section>
+
+  <!-- ══ ABOUT ═══════════════════════════════════════════════ -->
+  <section id="about">
+    <div class="container fade-in">
+      <p class="section-label">01 // who I am</p>
+      <h2 class="section-title">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+		       I am a cybersecurity professional based in Toronto, Canada, with experience in security monitoring, incident investigation, threat hunting, 
+            detection engineering, and threat intelligence within an MSSP environment. In my current SOC Analyst Level 3 role, I support security engineering 
+            initiatives across 12+ enterprise clients by building detection logic, tuning monitoring rules, improving investigation workflows, and coordinating 
+            response to high-severity incidents.
+          </p>
+          <p>
+		       I am also a published course author and cybersecurity educator, having developed five LetsDefend.io training courses covering malware analysis, 
+            reverse engineering, static and dynamic code analysis, malware obfuscation, anti-analysis techniques, and YARA-based detection.
+          </p>
+          <p>
+            I hold a Postgraduate Diploma in Cybersecurity &amp; Wireless Networking from George Brown College, Canada 
+            and a Bachelor of Computer Applications from Mangalore University, India.
+          </p>
+        </div>
+        <div class="about-stats">
+          <div class="stat-card">
+            <span class="stat-number">2+</span>
+            <span class="stat-desc">Years in Cybersecurity</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">12+</span>
+            <span class="stat-desc">Enterprise Clients Supported</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">250+</span>
+            <span class="stat-desc">Security Investigations</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">50+</span>
+            <span class="stat-desc">Monitoring Use Cases Built</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">48</span>
+            <span class="stat-desc">Threat Intel Briefs</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number">5</span>
+            <span class="stat-desc">Courses Published</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ SKILLS ══════════════════════════════════════════════ -->
+  <section id="skills">
+    <div class="container fade-in">
+      <p class="section-label">02 // what I work with</p>
+      <h2 class="section-title">Skills & Tools</h2>
+      <div class="skills-grid">
+
+        <div class="skill-category">
+          <div class="skill-cat-title">SIEM & SOAR</div>
+          <div class="skill-items">
+            <span class="tag">Sumo Logic Cloud SIEM</span>
+            <span class="tag">Microsoft Sentinel</span>
+            <span class="tag">Splunk</span>
+            <span class="tag">Elastic</span>
+            <span class="tag">Wazuh</span>
+            <span class="tag">Sumo Logic SOAR</span>
+            <span class="tag">MSOC SOAR</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">EDR / XDR / RMM</div>
+          <div class="skill-items">
+            <span class="tag">SentinelOne XDR</span>
+            <span class="tag">Microsoft Defender XDR</span>
+            <span class="tag">Wazuh</span>
+            <span class="tag">NinjaOne RMM</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Network Security</div>
+          <div class="skill-items">
+            <span class="tag">Suricata IDS/IPS</span>
+            <span class="tag">Security Onion</span>
+            <span class="tag">Darktrace Suite</span>
+            <span class="tag">Palo Alto NGFW</span>
+            <span class="tag">Palo Alto GlobalProtect</span>
+            <span class="tag">Cisco Meraki MX</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">TCPdump</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Analysis & Forensics</div>
+          <div class="skill-items">
+            <span class="tag">Ghidra</span>
+            <span class="tag">IDA Pro</span>
+            <span class="tag">x32dbg</span>
+            <span class="tag">PEStudio</span>
+            <span class="tag">FLOSS</span>
+            <span class="tag">CAPA</span>
+            <span class="tag">Detect It Easy</span>
+            <span class="tag">Volatility</span>
+            <span class="tag">Autopsy</span>
+            <span class="tag">Velociraptor</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Scripting & Detection</div>
+          <div class="skill-items">
+            <span class="tag">Python</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Bash</span>
+            <span class="tag">YARA</span>
+            <span class="tag">Sigma</span>
+            <span class="tag">Sumo Logic Query Language</span>
+            <span class="tag">Kusto Query Language</span>
+            <span class="tag">Splunk Processing Language</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Platforms & Operations</div>
+          <div class="skill-items">
+            <span class="tag">Windows Server</span>
+            <span class="tag">Linux</span>
+            <span class="tag">Microsoft Azure</span>
+            <span class="tag">Hyper-V</span>
+            <span class="tag">VMware vSphere</span>
+            <span class="tag">VirtualBox</span>
+            <span class="tag">Jira</span>
+            <span class="tag">Opsgenie</span>
+            <span class="tag">GitHub</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Email & Identity</div>
+          <div class="skill-items">
+            <span class="tag">Abnormal Security</span>
+            <span class="tag">Obsidian Security</span>
+			<span class="tag">Okta</span>
+            <span class="tag">Microsoft 365</span>
+            <span class="tag">Google Workspace</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <div class="skill-cat-title">Networking</div>
+          <div class="skill-items">
+            <span class="tag">TCP/IP</span>
+            <span class="tag">SSL/TLS</span>
+            <span class="tag">VPNs</span>
+            <span class="tag">VLANs</span>
+            <span class="tag">ACLs</span>
+            <span class="tag">NAT</span>
+            <span class="tag">Routing & Switching</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ EXPERIENCE ══════════════════════════════════════════ -->
+  <section id="experience">
+    <div class="container fade-in">
+      <p class="section-label">03 // where I've worked</p>
+      <h2 class="section-title">Work Experience</h2>
+      <div class="timeline">
+
+        <!-- JOB 1 -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="job-title">SOC Analyst Level 3 — Security Engineering Focus</div>
+            <div class="job-company">Mjolnir Security MSSP</div>
+            <div class="job-meta">
+              <span>📅 Dec 2025 – Present</span>
+              <span>📍 Toronto, ON</span>
+            </div>
+          </div>
+          <ul>
+            <li>In my current SOC Analyst Level 3 role, I support security engineering and detection engineering initiatives across 12+ enterprise clients. My work includes building and tuning monitoring use cases, 
+				conducting proactive threat hunts, investigating high-severity incidents, correlating telemetry across SIEM, EDR, NDR, cloud, identity, and email environments, and improving analyst investigation workflows. 
+				I also contribute to the refinement of Mjolnir Security’s AI-driven security operations platforms, while mentoring junior analysts through investigation reviews and detection engineering guidance.</li>
+          </ul>
+        </div>
+
+        <!-- JOB 2 -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="job-title">SOC Analyst Level 2</div>
+            <div class="job-company">Mjolnir Security MSSP</div>
+            <div class="job-meta">
+              <span>📅 Oct 2024 – Dec 2025</span>
+              <span>📍 Toronto, ON</span>
+            </div>
+          </div>
+          <ul>
+            <li>As a SOC Analyst Level 2, I handled 250+ client-facing security investigations and escalations across enterprise environments, supporting incident validation, 
+				remediation guidance, and client reporting. I authored 48 threat intelligence briefs, developed Sumo Logic Cloud SIEM rules, Microsoft Defender custom detections, 
+				SentinelOne STAR rules, and YARA signatures to expand detection coverage, while supporting SOAR automation initiatives to streamline investigations, improve response consistency, and strengthen response workflows.</li>
+          </ul>
+        </div>
+
+        <!-- JOB 3 -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="job-title">SOC Analyst Level 1</div>
+            <div class="job-company">Mjolnir Security MSSP</div>
+            <div class="job-meta">
+              <span>📅 May 2024 – Oct 2024</span>
+              <span>📍 Toronto, ON</span>
+            </div>
+          </div>
+          <ul>
+            <li>In my Level 1 SOC role, I monitored and triaged alerts across SIEM, EDR, IDS/IPS, cloud, email, and identity platforms in a 24/7 MSSP environment. 
+				I correlated endpoint, network, authentication, email, and cloud telemetry to validate security events, escalate confirmed threats in accordance with client SLAs, and support timely incident response workflows.</li>
+          </ul>
+        </div>
+
+        <!-- JOB 4 -->
+        <div class="timeline-item">
+          <div class="timeline-header">
+            <div class="job-title">Cybersecurity Content Engineer</div>
+            <div class="job-company">LetsDefend.io</div>
+            <div class="job-meta">
+              <span>📅 Jan 2024 – May 2024</span>
+              <span>📍 Remote · Contract</span>
+            </div>
+          </div>
+          <ul>
+            <li>As a Cybersecurity Content Engineer, I authored and published five LetsDefend.io training courses focused on malware analysis, reverse engineering, and threat detection. 
+				I developed 55 technical lessons, 115 assessment questions, 5 quizzes, and hands-on labs using custom and real-world malware samples, spanning 18+ hours of practical training content.</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ PROJECTS ════════════════════════════════════════════ -->
+  <section id="projects">
+    <div class="container fade-in">
+      <p class="section-label">04 // what I've built</p>
+      <h2 class="section-title">Technical Portfolio</h2>
+      <div class="projects-grid">
+
+        <!-- FEATURED -->  
+        <div class="project-card featured">
+          <div class="project-top">
+            <span class="project-icon">☁️</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/CloudHoneynet" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Azure Cloud SOC & Honeynet</div>
+          <p class="project-desc">
+            Deployed an Azure Honeynet to capture and analyse live malicious network traffic.
+            Integrated Microsoft Sentinel as SIEM with KQL alert rules, executed incident response
+            per NIST 800-61, applied MITRE ATT&CK framework, and developed SOAR playbooks
+            achieving a significant reduction in security alert volume.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Azure Sentinel</span>
+            <span class="tag">KQL</span>
+            <span class="tag">NIST 800-61</span>
+            <span class="tag">MITRE ATT&CK</span>
+            <span class="tag">SOAR</span>
+            <span class="tag">Honeynet</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: Malware Analysis -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🦠</span>
+            <div class="project-links">
+              <a href="https://medium.com/@m.munr44/unveiling-malware-a-journey-from-analysis-to-detection-a589f4700dfa" target="_blank">Medium ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Malware Analysis — Unveiling a Trojan</div>
+          <p class="project-desc">
+            Published technical report detailing static &amp; dynamic malware analysis,
+            IOC extraction, YARA-based detection development, adversary behaviour mapping,
+            and remediation recommendations.
+          </p>
+          <div class="project-tags">
+            <span class="tag">YARA</span>
+            <span class="tag">Wireshark</span>
+            <span class="tag">PEStudio</span>
+            <span class="tag">IOC</span>
+            <span class="tag">MITRE ATT&CK</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: NetSec -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🌐</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/CPT-NetSec-2.0" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Enterprise Network Security Lab</div>
+          <p class="project-desc">
+            Designed an enterprise network security architecture featuring IPSec VPN,
+            Cisco ASA firewall controls, AAA authentication, VLAN segmentation, ACLs,
+            NAT, and OSPF routing — demonstrating defence-in-depth principles.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Cisco ASA</span>
+            <span class="tag">IPSec VPN</span>
+            <span class="tag">VLAN</span>
+            <span class="tag">OSPF</span>
+            <span class="tag">ACL</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: Active Directory -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🖥️</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/Active-Directory-Home-Lab" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Active Directory Home Lab</div>
+          <p class="project-desc">
+            Deployed Active Directory Domain Services and automated creation of 900+ users
+            via PowerShell to simulate a realistic enterprise environment for
+            attack/defence training scenarios.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Active Directory</span>
+            <span class="tag">PowerShell</span>
+            <span class="tag">Windows Server</span>
+            <span class="tag">ADDS</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: Security Onion -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🔍</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/Security-Onion-Traffic-Analysis" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Security Onion Traffic Analysis</div>
+          <p class="project-desc">
+            Deployed Security Onion for network security monitoring — PCAP analysis,
+            rule tuning, and threat detection to identify anomalous traffic patterns.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Security Onion</span>
+            <span class="tag">PCAP</span>
+            <span class="tag">IDS</span>
+            <span class="tag">NSM</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: FIM -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🐍</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/File-Integrity-Monitor" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">File Integrity Monitor (FIM)</div>
+          <p class="project-desc">
+            Python FIM tool that monitors file system changes, detects unauthorised
+            modifications via hashing, and alerts in real time.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">FIM</span>
+            <span class="tag">SHA-256</span>
+            <span class="tag">Alerting</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: Keylogger -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">⌨️</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/Python-Keylogger" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Keylogger with Email Exfiltration</div>
+          <p class="project-desc">
+            Python-based keylogger with automated email reporting — built for
+            educational malware analysis and understanding attacker TTPs.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Malware Dev</span>
+            <span class="tag">TTP Research</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: CryptXOR -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">🔐</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/CryptXOR" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">CryptXOR — Data Encryptor/Decryptor</div>
+          <p class="project-desc">
+            Python tool implementing XOR-based encryption and decryption,
+            demonstrating fundamental cryptographic concepts used in obfuscation and malware.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Cryptography</span>
+            <span class="tag">XOR</span>
+            <span class="tag">Obfuscation</span>
+          </div>
+        </div>
+
+        <!-- PROJECT: Network Manipulation Suite -->
+        <div class="project-card">
+          <div class="project-top">
+            <span class="project-icon">📡</span>
+            <div class="project-links">
+              <a href="https://github.com/Muneer44/Network-Manipulation-Suite" target="_blank">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-title">Network Manipulation Suite</div>
+          <p class="project-desc">
+            Python suite for network-level operations — packet crafting,
+            sniffing, and manipulation. Built to understand network attack vectors
+            and strengthen defensive detection rules.
+          </p>
+          <div class="project-tags">
+            <span class="tag">Python</span>
+            <span class="tag">Packet Crafting</span>
+            <span class="tag">Networking</span>
+          </div>
+        </div>
+
+		<!-- PROJECT: LetsDefend Courses -->
+        <div class="project-card featured">
+          <div class="project-top">
+            <span class="project-icon">📚</span>
+            <div class="project-links">
+              <a href="https://app.letsdefend.io/training/lessons/static-code-analysis" target="_blank">Static Analysis ↗</a>
+			  <a href="https://app.letsdefend.io/training/lessons/dynamic-code-analysis" target="_blank">Dynamic Analysis ↗</a>
+              <a href="https://app.letsdefend.io/training/lessons/mastering-yara-for-malware-detection" target="_blank">YARA Course ↗</a>
+			  <a href="https://app.letsdefend.io/training/lessons/malware-obfuscation-techniques" target="_blank">obfuscation ↗</a>
+			  <a href="https://app.letsdefend.io/training/lessons/malware-anti-analysis-techniques" target="_blank">Anti-Analysis ↗</a>
+            </div>
+          </div>
+          <div class="project-title">LetsDefend.io — Published Courses</div>
+          <p class="project-desc">
+            5 cybersecurity courses published on LetsDefend.io: Static Code Analysis,
+            Dynamic Code Analysis, Malware Obfuscation, Anti-Analysis Techniques,
+            and YARA-based Malware Detection. 55 lessons · 115 assessments · 18+h Hands-on content.
+          </p>
+          <div class="project-tags">
+            <span class="tag">YARA</span>
+            <span class="tag">Ghidra</span>
+            <span class="tag">IDA Pro</span>
+            <span class="tag">Malware Analysis</span>
+            <span class="tag">Reverse Engineering</span>
+            <span class="tag">Content Creation</span>
+          </div>
+        </div>
+		  
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ CERTIFICATIONS ══════════════════════════════════════ -->
+  <section id="certifications">
+    <div class="container fade-in">
+      <p class="section-label">05 // credentials</p>
+      <h2 class="section-title">Certifications</h2>
+      <div class="certs-grid">
+
+        <a href="https://www.credly.com/badges/ca39a87d-e254-40ac-8058-d2efea0ae7e9" class="cert-card" target="_blank">
+          <span class="cert-icon">🛡️</span>
+          <div><div class="cert-name">CompTIA Security+</div><div class="cert-issuer">CompTIA</div></div>
+        </a>
+
+        <!-- UPDATE: Add your Cisco CyberOps badge URL when available -->
+        <a href="#" class="cert-card" target="_blank">
+          <span class="cert-icon">🌐</span>
+          <div><div class="cert-name">Cisco CyberOps Associate</div><div class="cert-issuer">Cisco</div></div>
+        </a>
+
+        <a href="https://www.credly.com/badges/10aa1b27-51f7-473b-83e6-84a09603c8a9" class="cert-card" target="_blank">
+          <span class="cert-icon">🔵</span>
+          <div><div class="cert-name">Blue Team Level 1</div><div class="cert-issuer">Security Blue Team</div></div>
+        </a>
+
+        <!-- UPDATE: Add SentinelOne SIREN badge URL when available -->
+        <a href="#" class="cert-card" target="_blank">
+          <span class="cert-icon">⚡</span>
+          <div><div class="cert-name">SentinelOne SIREN</div><div class="cert-issuer">SentinelOne</div></div>
+        </a>
+
+        <a href="https://verify.skilljar.com/c/br7sfusdj393" class="cert-card" target="_blank">
+          <span class="cert-icon">📊</span>
+          <div><div class="cert-name">Sumo Logic Certified</div><div class="cert-issuer">Sumo Logic</div></div>
+        </a>
+
+        <a href="https://www.linkedin.com/posts/muneer44_cybersecurity-isc2-certification-activity-7126191292602023936-8AFv" class="cert-card" target="_blank">
+          <span class="cert-icon">🔐</span>
+          <div><div class="cert-name">ISC2 CC</div><div class="cert-issuer">ISC2</div></div>
+        </a>
+
+        <a href="https://github.com/Muneer44/Muneer44/assets/117259069/d78a965a-2e3b-48c3-a6be-c9986cd719c9" class="cert-card" target="_blank">
+          <span class="cert-icon">🔎</span>
+          <div><div class="cert-name">Qualys VMDR</div><div class="cert-issuer">Qualys</div></div>
+        </a>
+
+        <a href="https://learn.microsoft.com/en-us/users/mohammedmuneer-4021/credentials/7f4fd672e12f287b" class="cert-card" target="_blank">
+          <span class="cert-icon">☁️</span>
+          <div><div class="cert-name">Microsoft AZ-900</div><div class="cert-issuer">Microsoft Azure</div></div>
+        </a>
+
+        <!-- SC-200 in progress — no link yet -->
+        <div class="cert-card cert-card--wip">
+          <span class="cert-icon">⏳</span>
+          <div>
+            <div class="cert-name">Microsoft SC-200</div>
+            <div class="cert-issuer">In Progress · Microsoft</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ BLOG ════════════════════════════════════════════════ -->
+  <section id="blog">
+    <div class="container fade-in">
+      <p class="section-label">06 // writing & research</p>
+      <h2 class="section-title">Blog & Threat Intel</h2>
+      <p id="blog-loading" class="blog-loading">// fetching latest posts from Medium...</p>
+      <div class="blog-grid" id="blog-grid"></div>
+    </div>
+  </section>
+
+  <!-- ══ CONTACT ═════════════════════════════════════════════ -->
+  <section id="contact">
+    <div class="container fade-in">
+      <p class="section-label">07 // get in touch</p>
+      <h2 class="section-title">Contact</h2>
+      <p class="contact-tagline">
+	  Interested in security operations, detection engineering, threat hunting, malware analysis, and cybersecurity education. Feel free to connect for professional collaboration, technical discussions, research, or knowledge sharing.
+      </p>
+      <div class="contact-links">
+        <a href="mailto:m.munr44@gmail.com" class="contact-link"><span class="icon">✉️</span> m.munr44@gmail.com</a>
+        <a href="https://www.linkedin.com/in/muneer44/" class="contact-link" target="_blank"><span class="icon">💼</span> LinkedIn</a>
+        <a href="https://github.com/muneer44" class="contact-link" target="_blank"><span class="icon">🐙</span> GitHub</a>
+        <a href="https://medium.com/@m.munr44" class="contact-link" target="_blank"><span class="icon">✍️</span> Medium</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> <span>Mohammed Muneer</span></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
